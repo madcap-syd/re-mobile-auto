@@ -33,10 +33,8 @@ python3 main.py target.apk
 - `frida_native_bypass.js` - хуки для Native
 - `jadx_sources/` - декомпилированный Java код
 
-## 🏆 Battle-Tested
+## 🏢 Применение
 
-✅ **OWASP Uncrackable Level 1**: Нашел AES, сгенерировал Frida-хук, флаг: "I want to believe"  
-✅ **OWASP Uncrackable Level 2**: Анализ libfoo.so через Ghidra, нативный обход
-
----
-*Для CTF и мобильного пентеста* 🔥
+    🔒 Аудит безопасности Android приложений
+    🦠 Анализ вредоносного ПО  
+    ️ Валидация RASP-защит
