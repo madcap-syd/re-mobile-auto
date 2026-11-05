@@ -4,3 +4,4 @@ __pycache__/
 *.log
 .DS_Store
 test_app.apk
+frida-server
