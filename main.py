@@ -106,9 +106,23 @@ def analyze_apk(apk_path: Path, output_dir: Path):
     except Exception as e:
         console.print(f"[red][ERROR][/red] Frida generation failed: {e}")
 
+        # Генерация HTML отчета и SSL bypass
+    try:
+        from core.report_generator import generate_html_report
+        from core.ssl_bypass_gen import generate_ssl_bypass
+        report_file_html = generate_html_report(intel, target_report_dir)
+        console.print(f"[green][+][/green] HTML report saved to: {report_file_html}")
+        ssl_file = generate_ssl_bypass(target_report_dir)
+        console.print(f"[green][+][/green] SSL bypass script saved to: {ssl_file}")
+    except Exception as e:
+        console.print(f"[red][ERROR][/red] Report generation failed: {e}")
+
     return True
 
 if __name__ == "__main__":
+    import argparse
+    from pathlib import Path
+    
     parser = argparse.ArgumentParser(description="re-mobile-auto")
     parser.add_argument("target", type=str, help="Path to APK")
     parser.add_argument("-o", "--output", type=str, default="reports")
