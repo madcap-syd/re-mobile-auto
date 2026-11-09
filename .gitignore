@@ -31,3 +31,11 @@ reports/*/detour_analyzed/
 htb_challenges/
 *.apk
 !*.apk.example
+
+# ==========================================
+# Структура и чистота репозитория
+# ==========================================
+tools/frida-server*
+workspaces/
+*.part
+.DS_Store
