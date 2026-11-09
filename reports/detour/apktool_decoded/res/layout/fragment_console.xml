@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/page" android:padding="@dimen/space_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="@dimen/space_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ink_muted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/console_body" />
+        <Button android:textColor="@color/ink" android:id="@id/retrieve" android:background="@drawable/bg_button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/retrieve" android:textAllCaps="false" android:paddingStart="@dimen/space_3" android:paddingEnd="@dimen/space_3" android:stateListAnimator="@null" />
+        <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="@color/brand_yellow" android:id="@id/output" android:background="@drawable/bg_token" android:padding="@dimen/space_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3" />
+    </LinearLayout>
+</LinearLayout>

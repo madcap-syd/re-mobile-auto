@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/slate_800" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/slate_800" android:padding="@dimen/space_3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_route" android:tint="@color/brand_yellow" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/surface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_marginStart="@dimen/space_2"/>
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/mainHost" android:background="@color/page" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" app:defaultNavHost="true" app:navGraph="@navigation/main_nav"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav" app:startDestination="@+id/homeFragment">
+    <fragment android:label="@string/title_home" android:name="noob.ymuu.detour.HomeFragment" android:id="@+id/homeFragment">
+        <action android:id="@+id/toSupport" app:destination="@+id/supportFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_stage" android:name="noob.ymuu.detour.StageAFragment" android:id="@+id/stageAFragment">
+        <argument android:name="seg" android:defaultValue="" app:argType="string"/>
+    </fragment>
+    <fragment android:label="@string/title_stage" android:name="noob.ymuu.detour.StageBFragment" android:id="@+id/stageBFragment">
+        <argument android:name="seg" android:defaultValue="" app:argType="string"/>
+    </fragment>
+    <fragment android:label="@string/title_support" android:name="noob.ymuu.detour.SupportFragment" android:id="@+id/supportFragment"/>
+</navigation>

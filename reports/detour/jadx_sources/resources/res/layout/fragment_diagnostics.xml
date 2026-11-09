@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/page" android:padding="@dimen/space_3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="@dimen/space_3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/ink" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_diagnostics"/>
+        <TextView android:textSize="14sp" android:textColor="@color/ink_muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:text="@string/diagnostics_body"/>
+        <TextView android:textSize="12sp" android:typeface="monospace" android:textColor="@color/brand_yellow" android:id="@+id/tokenView" android:background="@drawable/bg_token" android:padding="@dimen/space_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3"/>
+    </LinearLayout>
+</LinearLayout>

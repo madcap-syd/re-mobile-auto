@@ -1,0 +1,79 @@
+{
+    "target_name": "detour",
+    "dex_files": [
+        "classes.dex"
+    ],
+    "native_libs": [
+        "lib/arm64-v8a/libdetour.so",
+        "lib/x86_64/libdetour.so"
+    ],
+    "manifest_info": {
+        "package_name": "noob.ymuu.detour",
+        "manifest_size_kb": 2.61,
+        "exported_activities_count": 1,
+        "exported_activities": [
+            "noob.ymuu.detour.MainActivity"
+        ]
+    },
+    "jadx_output": "jadx_sources",
+    "static_analysis_findings": {
+        "urls": [
+            {
+                "file": "sources/androidx/core/content/res/TypedArrayUtils.java",
+                "value": "http://schemas.android.com/apk/res/android"
+            }
+        ],
+        "crypto": [
+            {
+                "file": "sources/kotlinx/serialization/internal/PrimitivesKt.java",
+                "value": "rSa"
+            },
+            {
+                "file": "sources/androidx/activity/FullyDrawnReporter.java",
+                "value": "rsA"
+            },
+            {
+                "file": "sources/androidx/core/util/PatternsCompat.java",
+                "value": "rsa"
+            },
+            {
+                "file": "sources/androidx/core/app/NotificationCompat.java",
+                "value": "RSA"
+            },
+            {
+                "file": "sources/androidx/core/hardware/fingerprint/FingerprintManagerCompat.java",
+                "value": "javax.crypto."
+            },
+            {
+                "file": "sources/androidx/core/hardware/fingerprint/FingerprintManagerCompat.java",
+                "value": "Cipher"
+            },
+            {
+                "file": "sources/androidx/core/hardware/fingerprint/FingerprintManagerCompat.java",
+                "value": "cipher"
+            },
+            {
+                "file": "sources/androidx/core/content/pm/PackageInfoCompat.java",
+                "value": "MessageDigest"
+            }
+        ],
+        "root_detection": [
+            {
+                "file": "sources/noob/ymuu/detour/R.java",
+                "value": "root"
+            },
+            {
+                "file": "sources/kotlinx/serialization/internal/InternalHexConverter.java",
+                "value": "ROOT"
+            },
+            {
+                "file": "sources/kotlinx/coroutines/JobSupport.java",
+                "value": "Root"
+            },
+            {
+                "file": "sources/androidx/appcompat/app/AppCompatDelegateImpl.java",
+                "value": "Build.FINGERPRINT"
+            }
+        ]
+    }
+}
