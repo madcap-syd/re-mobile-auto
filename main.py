@@ -87,15 +87,13 @@ def analyze_apk(apk_path: Path, output_dir: Path):
             console.print(f"[green][+][/green] Ghidra findings added to intel.")
     except Exception as e:
         console.print(f"[red][ERROR][/red] Native bridge failed: {e}")
-    except Exception as e:
-        console.print(f"[red][ERROR][/red] Native bridge failed: {e}")
 
 
     # 8. Генерация Native Frida скрипта на основе Ghidra
     try:
         from core.native_frida_gen import generate_native_frida
         # Передаем словарь intel напрямую, чтобы избежать проблем с чтением файла
-        generate_native_frida(target_report_dir, intel)
+        generate_native_frida(intel, target_report_dir)
     except Exception as e:
         console.print(f"[red][ERROR][/red] Native Frida generation failed: {e}")
 

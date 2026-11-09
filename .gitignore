@@ -1,7 +1,21 @@
-venv/
-reports/
+# Python
 __pycache__/
-*.log
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Android / Reverse Engineering
+*.apk
+!r2pay-v0.9.apk        # Оставляем оригинал для тестов фреймворка
+!Uncrackable-Level*.apk # Оставляем оригиналы OWASP
+!target_ctf.apk
+!test_app.apk
+r2pay_patched/         # Декомпилированные исходники не нужны в git
+*.dm
+*.keystore             # НИКОГДА не коммитим ключи подписи!
+my-release-key.keystore
+
+# OS
 .DS_Store
-test_app.apk
-frida-server
+Thumbs.db
