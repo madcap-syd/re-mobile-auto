@@ -19,3 +19,15 @@ my-release-key.keystore
 # OS
 .DS_Store
 Thumbs.db
+
+# ==========================================
+# Оптимизация размера репозитория
+# Исключаем тяжелые декомпилированные исходники и распакованные APK
+# Оставляем только легкие отчеты: *.json, *.js, *.html
+# ==========================================
+reports/*/jadx_sources/
+reports/*/unpacked/
+reports/*/detour_analyzed/
+htb_challenges/
+*.apk
+!*.apk.example
